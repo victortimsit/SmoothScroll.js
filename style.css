@@ -1,0 +1,214 @@
+h1 {
+  width: 100%;
+  margin-left: 20px;
+  font-weight: 800;
+  font-size: 100px;
+  opacity: .8;
+}
+
+h2 {
+  margin-top: 0px
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  width: 100%;
+  margin-left: 20px;
+  font-size: 70px;
+  opacity: .6;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+xmp {
+  width: 100%;
+  background-color: aliceblue;
+  margin: 20px;
+  color: dimgray;
+}
+
+.hero {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container__body {
+  width: 60vw;
+  min-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.block {
+  min-width: 280px;
+  position: relative;
+  /* width: calc(30vw - 40px); */
+  flex: 1;
+  min-height: 200px;
+  height: 14vw;
+  /* background-color: lightgrey; */
+  outline: 1px solid lightgrey;
+  background:
+    linear-gradient(to top right, transparent 49.9%, lightgrey 49.9%,lightgrey 50.1%, transparent 50.1%),
+    linear-gradient(to bottom right,transparent 49.9%, lightgrey 49.9%,lightgrey 50.1%, transparent 50.1%);
+  margin: 20px;
+}
+
+
+.block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/******NETWORK****/
+
+.network {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+/******CONTROLS*****/
+
+.controls {
+  width: 200px;
+  color: var(--grey);
+  position: fixed;
+  bottom: 0;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 8px;
+  background-color: #F6F7FC;
+  font-weight: 600;
+}
+.controls__duration {
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.controls label {
+  font-weight: 400;
+  color: var(--grey);
+  opacity: .8;
+  margin-left: 10px;
+}
+
+input[type=radio] {
+  margin-bottom: 14px;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  margin-bottom: 40px
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  background: var(--grey);
+  cursor: pointer;
+  margin-top: -7px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  background: var(--grey);
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  background: var(--grey);
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: var(--blue);
+  border-radius: 1.3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: var(--blue);
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: var(--blue);
+  border-radius: 1.3px;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: var(--blue);
+  border-radius: 2.6px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: var(--blue);
+}
+input[type=range]::-ms-fill-upper {
+  background: var(--blue);
+  border-radius: 2.6px;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: var(--blue);
+}
+
+/*****Variables****/
+
+:root{
+  --blue: #4C7EFF;
+  --grey: #3D4457;
+}
